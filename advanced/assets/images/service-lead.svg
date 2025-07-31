@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="60" fill="url(#icon-gradient)" opacity="0.1" />
+  
+  <!-- Funnel icon -->
+  <path d="M30,30 L90,30 L75,60 L75,90 L45,90 L45,60 Z" stroke="url(#icon-gradient)" stroke-width="4" fill="none" />
+  
+  <!-- Lead dots -->
+  <circle cx="45" cy="45" r="5" fill="url(#icon-gradient)" />
+  <circle cx="60" cy="45" r="5" fill="url(#icon-gradient)" />
+  <circle cx="75" cy="45" r="5" fill="url(#icon-gradient)" />
+  <circle cx="52.5" cy="60" r="5" fill="url(#icon-gradient)" />
+  <circle cx="67.5" cy="60" r="5" fill="url(#icon-gradient)" />
+  <circle cx="60" cy="75" r="5" fill="url(#icon-gradient)" />
+</svg>

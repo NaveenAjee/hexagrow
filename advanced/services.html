@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Hexa Grow Digital Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-gray-900 bg-gray-50">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-white"></div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-40 transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white flex items-center">
+                    <span class="text-gradient">Hexa</span><span class="ml-1">Grow</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 text-white">
+                    <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-purple-300 transition-colors">Services</a>
+                    <a href="portfolio.html" class="hover:text-purple-300 transition-colors">Portfolio</a>
+                    <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-95 absolute w-full">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex flex-col space-y-4 text-white">
+                    <a href="index.html" class="hover:text-purple-300 transition-colors py-2">Home</a>
+                    <a href="services.html" class="hover:text-purple-300 transition-colors py-2">Services</a>
+                    <a href="portfolio.html" class="hover:text-purple-300 transition-colors py-2">Portfolio</a>
+                    <a href="about.html" class="hover:text-purple-300 transition-colors py-2">About</a>
+                    <a href="contact.html" class="hover:text-purple-300 transition-colors py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="relative pt-32 pb-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white">
+        <div class="container mx-auto px-4 z-10 relative">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">Our Services</h1>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto text-center">Comprehensive digital marketing solutions to help your business grow and thrive in the digital landscape.</p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg class="relative block w-full h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-gray-50"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Core <span class="text-gradient">Services</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of digital marketing services to help your business grow and succeed online.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Lead Generation -->
+                <div class="service-card" data-service="lead-generation">
+                    <div class="service-icon">
+                        <i class="fas fa-funnel-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lead Generation</h3>
+                    <p class="text-gray-600 mb-4">Convert visitors into qualified leads with our proven lead generation strategies.</p>
+                    <button class="service-learn-more">Learn More</button>
+                </div>
+                
+                <!-- Service 2: Meta Ads Management -->
+                <div class="service-card" data-service="meta-ads">
+                    <div class="service-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Meta Ads Management</h3>
+                    <p class="text-gray-600 mb-4">Maximize your ROI with expertly managed Facebook and Instagram ad campaigns.</p>
+                    <button class="service-learn-more">Learn More</button>
+                </div>
+                
+                <!-- Service 3: Funnel Optimization -->
+                <div class="service-card" data-service="funnel-optimization">
+                    <div class="service-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Funnel Optimization</h3>
+                    <p class="text-gray-600 mb-4">Improve conversion rates with data-driven sales funnel optimization strategies.</p>
+                    <button class="service-learn-more">Learn More</button>
+                </div>
+                
+                <!-- Service 4: Brand Awareness -->
+                <div class="service-card" data-service="brand-awareness">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Awareness</h3>
+                    <p class="text-gray-600 mb-4">Increase your brand's visibility and recognition in your target market.</p>
+                    <button class="service-learn-more">Learn More</button>
+                </div>
+                
+                <!-- Service 5: Social Media Management -->
+                <div class="service-card" data-service="social-media">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Management</h3>
+                    <p class="text-gray-600 mb-4">Build and engage your audience with strategic social media content and campaigns.</p>
+                    <button class="service-learn-more">Learn More</button>
+                </div>
+                
+                <!-- Service 6: Email Automation -->
+                <div class="service-card" data-service="email-automation">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Automation</h3>
+                    <p class="text-gray-600 mb-4">Nurture leads and drive conversions with personalized email marketing campaigns.</p>
+                    <button class="service-learn-more">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Modals -->
+    <div id="service-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="modal-overlay absolute inset-0 bg-black opacity-75"></div>
+        
+        <!-- Lead Generation Modal -->
+        <div id="lead-generation-modal" class="modal-content bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 relative hidden">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-8">
+                <div class="service-icon-large mb-6">
+                    <i class="fas fa-funnel-dollar"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Lead Generation</h3>
+                <p class="text-gray-600 mb-6">Our lead generation services are designed to attract high-quality prospects and convert them into valuable leads for your business. We use a combination of strategies to drive targeted traffic and optimize conversion rates.</p>
+                
+                <h4 class="text-xl font-semibold mb-3">What We Offer:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Landing page optimization for maximum conversions</li>
+                    <li>Strategic lead magnets and content offers</li>
+                    <li>Multi-channel lead generation campaigns</li>
+                    <li>Lead qualification and scoring systems</li>
+                    <li>A/B testing and conversion rate optimization</li>
+                    <li>Lead nurturing workflows</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mb-3">Benefits:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Increased quantity and quality of leads</li>
+                    <li>Higher conversion rates</li>
+                    <li>Reduced cost per acquisition</li>
+                    <li>Improved ROI on marketing spend</li>
+                    <li>Sustainable pipeline of qualified prospects</li>
+                </ul>
+                
+                <div class="mt-8 text-center">
+                    <a href="contact.html" class="btn-primary inline-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Meta Ads Management Modal -->
+        <div id="meta-ads-modal" class="modal-content bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 relative hidden">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-8">
+                <div class="service-icon-large mb-6">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Meta Ads Management</h3>
+                <p class="text-gray-600 mb-6">Our Meta Ads Management service helps you leverage the power of Facebook and Instagram advertising to reach your target audience, drive engagement, and generate conversions.</p>
+                
+                <h4 class="text-xl font-semibold mb-3">What We Offer:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Strategic campaign planning and setup</li>
+                    <li>Custom audience targeting and retargeting</li>
+                    <li>Ad creative development and testing</li>
+                    <li>Budget management and optimization</li>
+                    <li>Performance tracking and reporting</li>
+                    <li>Ongoing campaign optimization</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mb-3">Benefits:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Precise audience targeting capabilities</li>
+                    <li>Increased brand visibility and engagement</li>
+                    <li>Higher conversion rates and ROI</li>
+                    <li>Scalable campaigns to match business growth</li>
+                    <li>Data-driven insights for continuous improvement</li>
+                </ul>
+                
+                <div class="mt-8 text-center">
+                    <a href="contact.html" class="btn-primary inline-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Funnel Optimization Modal -->
+        <div id="funnel-optimization-modal" class="modal-content bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 relative hidden">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-8">
+                <div class="service-icon-large mb-6">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Funnel Optimization</h3>
+                <p class="text-gray-600 mb-6">Our Funnel Optimization service helps you identify and eliminate bottlenecks in your sales process, improving conversion rates at each stage of the customer journey.</p>
+                
+                <h4 class="text-xl font-semibold mb-3">What We Offer:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Comprehensive funnel analysis and mapping</li>
+                    <li>Conversion rate optimization at each funnel stage</li>
+                    <li>User experience and interface improvements</li>
+                    <li>A/B testing of key funnel elements</li>
+                    <li>Abandoned cart/form recovery strategies</li>
+                    <li>Personalization and segmentation implementation</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mb-3">Benefits:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Higher conversion rates throughout the funnel</li>
+                    <li>Reduced customer acquisition costs</li>
+                    <li>Improved customer experience and satisfaction</li>
+                    <li>Increased average order value</li>
+                    <li>Data-driven insights for continuous improvement</li>
+                </ul>
+                
+                <div class="mt-8 text-center">
+                    <a href="contact.html" class="btn-primary inline-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Brand Awareness Modal -->
+        <div id="brand-awareness-modal" class="modal-content bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 relative hidden">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-8">
+                <div class="service-icon-large mb-6">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Brand Awareness</h3>
+                <p class="text-gray-600 mb-6">Our Brand Awareness services help you increase visibility, recognition, and recall for your brand among your target audience, establishing a strong presence in your market.</p>
+                
+                <h4 class="text-xl font-semibold mb-3">What We Offer:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Strategic brand positioning and messaging</li>
+                    <li>Multi-channel brand awareness campaigns</li>
+                    <li>Content marketing for brand storytelling</li>
+                    <li>Influencer partnerships and collaborations</li>
+                    <li>PR and media outreach</li>
+                    <li>Brand consistency across all touchpoints</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mb-3">Benefits:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Increased brand recognition and recall</li>
+                    <li>Stronger brand positioning in the market</li>
+                    <li>Enhanced brand credibility and trust</li>
+                    <li>Expanded reach to new audience segments</li>
+                    <li>Long-term brand equity building</li>
+                </ul>
+                
+                <div class="mt-8 text-center">
+                    <a href="contact.html" class="btn-primary inline-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Media Management Modal -->
+        <div id="social-media-modal" class="modal-content bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 relative hidden">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-8">
+                <div class="service-icon-large mb-6">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Social Media Management</h3>
+                <p class="text-gray-600 mb-6">Our Social Media Management service helps you build and engage your audience across social platforms, creating meaningful connections and driving business results.</p>
+                
+                <h4 class="text-xl font-semibold mb-3">What We Offer:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Social media strategy development</li>
+                    <li>Content creation and curation</li>
+                    <li>Community management and engagement</li>
+                    <li>Social media advertising campaigns</li>
+                    <li>Performance tracking and analytics</li>
+                    <li>Competitor analysis and benchmarking</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mb-3">Benefits:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Increased brand visibility and engagement</li>
+                    <li>Stronger community and customer relationships</li>
+                    <li>Consistent brand voice across platforms</li>
+                    <li>Time savings through professional management</li>
+                    <li>Data-driven insights for strategy refinement</li>
+                </ul>
+                
+                <div class="mt-8 text-center">
+                    <a href="contact.html" class="btn-primary inline-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Email Automation Modal -->
+        <div id="email-automation-modal" class="modal-content bg-white rounded-lg shadow-xl max-w-4xl w-full mx-4 relative hidden">
+            <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="p-8">
+                <div class="service-icon-large mb-6">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Email Automation</h3>
+                <p class="text-gray-600 mb-6">Our Email Automation service helps you nurture leads, engage customers, and drive conversions through personalized, targeted email marketing campaigns.</p>
+                
+                <h4 class="text-xl font-semibold mb-3">What We Offer:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Email marketing strategy development</li>
+                    <li>Automated workflow and sequence creation</li>
+                    <li>Personalized email content development</li>
+                    <li>List segmentation and targeting</li>
+                    <li>A/B testing and optimization</li>
+                    <li>Performance tracking and reporting</li>
+                </ul>
+                
+                <h4 class="text-xl font-semibold mb-3">Benefits:</h4>
+                <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-600">
+                    <li>Increased engagement and conversion rates</li>
+                    <li>Time savings through automation</li>
+                    <li>Personalized customer experiences</li>
+                    <li>Consistent lead nurturing</li>
+                    <li>Higher ROI compared to many marketing channels</li>
+                </ul>
+                
+                <div class="mt-8 text-center">
+                    <a href="contact.html" class="btn-primary inline-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-gradient">Process</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We follow a proven methodology to deliver exceptional results for our clients.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Process Timeline -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500"></div>
+                
+                <!-- Process Steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center" data-aos="fade-up">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-3">Discovery</h3>
+                            <p class="text-gray-600">We start by understanding your business, goals, target audience, and current marketing efforts to identify opportunities and challenges.</p>
+                        </div>
+                        <div class="process-step-icon">
+                            <span class="text-white">1</span>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="process-step-icon">
+                            <span class="text-white">2</span>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 md:text-left mb-8 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-3">Strategy</h3>
+                            <p class="text-gray-600">Based on our findings, we develop a customized strategy that aligns with your business objectives and addresses your specific needs.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-3">Implementation</h3>
+                            <p class="text-gray-600">Our team executes the strategy with precision, setting up campaigns, creating content, and implementing technical solutions.</p>
+                        </div>
+                        <div class="process-step-icon">
+                            <span class="text-white">3</span>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="process-step-icon">
+                            <span class="text-white">4</span>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 md:text-left mb-8 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-3">Optimization</h3>
+                            <p class="text-gray-600">We continuously monitor performance, analyze data, and make data-driven adjustments to optimize results and maximize ROI.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="400">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <h3 class="text-2xl font-bold mb-3">Reporting</h3>
+                            <p class="text-gray-600">We provide regular, transparent reporting on key metrics and performance indicators, ensuring you have full visibility into your results.</p>
+                        </div>
+                        <div class="process-step-icon">
+                            <span class="text-white">5</span>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">Let's discuss how our services can help you achieve your business goals.</p>
+            <a href="contact.html" class="btn-secondary inline-block">
+                Schedule a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Hexa<span class="text-purple-400">Grow</span></h3>
+                    <p class="text-gray-400 mb-4">Helping businesses scale smarter through innovative digital marketing solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Lead Generation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Meta Ads Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Funnel Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Brand Awareness</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Email Automation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">123 Marketing St, Digital City, DC 45678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">info@hexagrow.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Hexa Grow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-purple-600 text-white rounded-full p-3 shadow-lg opacity-0 invisible transition-all duration-300 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

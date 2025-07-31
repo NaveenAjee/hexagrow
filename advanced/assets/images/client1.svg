@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="80" fill="#ffffff" opacity="0.1" rx="10" />
+  
+  <!-- Abstract logo shape -->
+  <circle cx="60" cy="40" r="25" fill="none" stroke="url(#logo-gradient)" stroke-width="3" />
+  <rect x="100" y="25" width="60" height="30" rx="5" fill="none" stroke="url(#logo-gradient)" stroke-width="3" />
+  
+  <!-- Company name -->
+  <text x="100" y="65" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">TechNova</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#db2777" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="60" fill="url(#icon-gradient)" opacity="0.1" />
+  
+  <!-- Brand awareness icon - Lightbulb with radiating lines -->
+  <path d="M60,30 C45,30 35,40 35,55 C35,65 40,70 45,75 L45,85 L75,85 L75,75 C80,70 85,65 85,55 C85,40 75,30 60,30 Z" stroke="url(#icon-gradient)" stroke-width="4" fill="none" />
+  
+  <!-- Lightbulb base -->
+  <rect x="50" y="85" width="20" height="5" fill="url(#icon-gradient)" />
+  
+  <!-- Radiating lines for awareness -->
+  <path d="M30,30 L40,40" stroke="url(#icon-gradient)" stroke-width="2" />
+  <path d="M20,60 L35,60" stroke="url(#icon-gradient)" stroke-width="2" />
+  <path d="M30,90 L40,80" stroke="url(#icon-gradient)" stroke-width="2" />
+  <path d="M90,30 L80,40" stroke="url(#icon-gradient)" stroke-width="2" />
+  <path d="M100,60 L85,60" stroke="url(#icon-gradient)" stroke-width="2" />
+  <path d="M90,90 L80,80" stroke="url(#icon-gradient)" stroke-width="2" />
+  <path d="M60,15 L60,25" stroke="url(#icon-gradient)" stroke-width="2" />
+</svg>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexa Grow | Digital Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-gray-900 bg-gray-50">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-white"></div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-40 transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white flex items-center">
+                    <span class="text-gradient">Hexa</span><span class="ml-1">Grow</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 text-white">
+                    <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-purple-300 transition-colors">Services</a>
+                    <a href="portfolio.html" class="hover:text-purple-300 transition-colors">Portfolio</a>
+                    <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-95 absolute w-full">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex flex-col space-y-4 text-white">
+                    <a href="index.html" class="hover:text-purple-300 transition-colors py-2">Home</a>
+                    <a href="services.html" class="hover:text-purple-300 transition-colors py-2">Services</a>
+                    <a href="portfolio.html" class="hover:text-purple-300 transition-colors py-2">Portfolio</a>
+                    <a href="about.html" class="hover:text-purple-300 transition-colors py-2">About</a>
+                    <a href="contact.html" class="hover:text-purple-300 transition-colors py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div id="particles-js" class="absolute inset-0"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/70 via-purple-900/70 to-pink-900/70"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 opacity-0 transform translate-y-10 transition-all duration-1000" id="hero-title">
+                Scale Smart with <span class="text-gradient">Hexa Grow</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto opacity-0 transform translate-y-10 transition-all duration-1000 delay-300" id="hero-subtitle">
+                We help businesses grow through strategic digital marketing and innovative solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 opacity-0 transform translate-y-10 transition-all duration-1000 delay-500" id="hero-cta">
+                <a href="portfolio.html" class="btn-primary">
+                    See Our Work
+                </a>
+                <a href="contact.html" class="btn-secondary">
+                    Book a Free Consultation
+                </a>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce cursor-pointer" id="scroll-down">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Clients Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Trusted by Industry Leaders</h2>
+            
+            <div class="client-carousel relative overflow-hidden">
+                <div class="client-slide flex items-center justify-around space-x-8 animate-carousel">
+                    <!-- Client logos will be duplicated in JS for infinite scroll effect -->
+                    <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="./assets/images/client1.svg" alt="Client 1" class="h-12 md:h-16">
+                    </div>
+                    <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="./assets/images/client2.svg" alt="Client 2" class="h-12 md:h-16">
+                    </div>
+                    <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="./assets/images/client3.svg" alt="Client 3" class="h-12 md:h-16">
+                    </div>
+                    <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="./assets/images/client4.svg" alt="Client 4" class="h-12 md:h-16">
+                    </div>
+                    <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="./assets/images/client5.svg" alt="Client 5" class="h-12 md:h-16">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hexa Grow Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Why <span class="text-gradient">Hexa Grow</span></h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-16">We combine creativity, data, and technology to deliver exceptional results.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data-Driven Approach</h3>
+                    <p class="text-gray-600">We make decisions based on real data and analytics, ensuring measurable results for your business.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Creative Solutions</h3>
+                    <p class="text-gray-600">Our team thinks outside the box to create innovative strategies that set your brand apart.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Team</h3>
+                    <p class="text-gray-600">Our specialists bring years of experience across various industries and digital platforms.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Customized Strategy</h3>
+                    <p class="text-gray-600">We create tailored marketing plans that align with your specific business goals and target audience.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rapid Growth</h3>
+                    <p class="text-gray-600">Our strategies are designed to accelerate your business growth and maximize ROI.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Dedicated Support</h3>
+                    <p class="text-gray-600">We provide ongoing support and regular updates to ensure your continued success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">What Our Clients Say</h2>
+            <p class="text-gray-300 text-center max-w-2xl mx-auto mb-16">Don't just take our word for it - hear from some of our satisfied clients.</p>
+            
+            <div class="testimonial-slider relative overflow-hidden">
+                <div class="testimonial-track flex transition-transform duration-500">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="mb-4 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="mb-6">"Hexa Grow transformed our online presence completely. Their strategic approach to our digital marketing has resulted in a 200% increase in qualified leads."</p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="./assets/images/testimonial1.jpg" alt="Sarah Johnson" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Sarah Johnson</h4>
+                                    <p class="text-sm text-gray-300">CEO, TechStart Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="mb-4 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="mb-6">"The team at Hexa Grow are true professionals. They understood our brand and created a marketing strategy that perfectly aligned with our goals. Highly recommended!"</p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="./assets/images/testimonial2.jpg" alt="Michael Chen" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Michael Chen</h4>
+                                    <p class="text-sm text-gray-300">Marketing Director, Global Retail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="mb-4 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="mb-6">"Working with Hexa Grow has been a game-changer for our business. Their social media management and lead generation strategies have delivered exceptional results."</p>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="./assets/images/testimonial3.jpg" alt="Emily Rodriguez" class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Emily Rodriguez</h4>
+                                    <p class="text-sm text-gray-300">Founder, StyleHouse</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Navigation -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="testimonial-dot active"></button>
+                    <button class="testimonial-dot"></button>
+                    <button class="testimonial-dot"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Grow Your Business?</h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Let's discuss how Hexa Grow can help you achieve your business goals.</p>
+            <a href="contact.html" class="btn-primary inline-block">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Hexa<span class="text-purple-400">Grow</span></h3>
+                    <p class="text-gray-400 mb-4">Helping businesses scale smarter through innovative digital marketing solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Lead Generation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Meta Ads Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Funnel Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Brand Awareness</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Email Automation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">123 Marketing St, Digital City, DC 45678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">info@hexagrow.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Hexa Grow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-purple-600 text-white rounded-full p-3 shadow-lg opacity-0 invisible transition-all duration-300 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

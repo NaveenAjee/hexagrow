@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="300" viewBox="0 0 1920 300">
+  <defs>
+    <linearGradient id="banner-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#4f46e5" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#db2777" stop-opacity="0.6" />
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#banner-gradient)" />
+  
+  <!-- Abstract Shapes -->
+  <g opacity="0.3" filter="url(#blur)">
+    <circle cx="300" cy="150" r="100" fill="#4f46e5" />
+    <circle cx="1600" cy="200" r="150" fill="#db2777" />
+    <circle cx="1000" cy="100" r="120" fill="#6d28d9" />
+    <circle cx="1800" cy="50" r="80" fill="#8b5cf6" />
+  </g>
+  
+  <!-- Hexagon Pattern -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <!-- Row 1 -->
+    <polygon points="100,50 130,65 130,95 100,110 70,95 70,65" />
+    <polygon points="200,50 230,65 230,95 200,110 170,95 170,65" />
+    <polygon points="300,50 330,65 330,95 300,110 270,95 270,65" />
+    <polygon points="400,50 430,65 430,95 400,110 370,95 370,65" />
+    <polygon points="500,50 530,65 530,95 500,110 470,95 470,65" />
+    
+    <!-- Row 2 -->
+    <polygon points="150,120 180,135 180,165 150,180 120,165 120,135" />
+    <polygon points="250,120 280,135 280,165 250,180 220,165 220,135" />
+    <polygon points="350,120 380,135 380,165 350,180 320,165 320,135" />
+    <polygon points="450,120 480,135 480,165 450,180 420,165 420,135" />
+    <polygon points="550,120 580,135 580,165 550,180 520,165 520,135" />
+  </g>
+  
+  <!-- More hexagons on the right side -->
+  <g opacity="0.1" stroke="#ffffff" stroke-width="1">
+    <!-- Row 1 -->
+    <polygon points="1100,50 1130,65 1130,95 1100,110 1070,95 1070,65" />
+    <polygon points="1200,50 1230,65 1230,95 1200,110 1170,95 1170,65" />
+    <polygon points="1300,50 1330,65 1330,95 1300,110 1270,95 1270,65" />
+    <polygon points="1400,50 1430,65 1430,95 1400,110 1370,95 1370,65" />
+    <polygon points="1500,50 1530,65 1530,95 1500,110 1470,95 1470,65" />
+    
+    <!-- Row 2 -->
+    <polygon points="1150,120 1180,135 1180,165 1150,180 1120,165 1120,135" />
+    <polygon points="1250,120 1280,135 1280,165 1250,180 1220,165 1220,135" />
+    <polygon points="1350,120 1380,135 1380,165 1350,180 1320,165 1320,135" />
+    <polygon points="1450,120 1480,135 1480,165 1450,180 1420,165 1420,135" />
+    <polygon points="1550,120 1580,135 1580,165 1550,180 1520,165 1520,135" />
+  </g>
+</svg>

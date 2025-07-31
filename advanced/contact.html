@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Hexa Grow Digital Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans antialiased text-gray-900 bg-gray-50">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-white"></div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-40 transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white flex items-center">
+                    <span class="text-gradient">Hexa</span><span class="ml-1">Grow</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 text-white">
+                    <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-purple-300 transition-colors">Services</a>
+                    <a href="portfolio.html" class="hover:text-purple-300 transition-colors">Portfolio</a>
+                    <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
+                </div>
+                
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-95 absolute w-full">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex flex-col space-y-4 text-white">
+                    <a href="index.html" class="hover:text-purple-300 transition-colors py-2">Home</a>
+                    <a href="services.html" class="hover:text-purple-300 transition-colors py-2">Services</a>
+                    <a href="portfolio.html" class="hover:text-purple-300 transition-colors py-2">Portfolio</a>
+                    <a href="about.html" class="hover:text-purple-300 transition-colors py-2">About</a>
+                    <a href="contact.html" class="hover:text-purple-300 transition-colors py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="relative pt-32 pb-20 bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white">
+        <div class="container mx-auto px-4 z-10 relative">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">Contact Us</h1>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto text-center">Have a question or ready to start your next project? Get in touch with our team today.</p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg class="relative block w-full h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-gray-50"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-xl p-8 transform hover:scale-105 transition-transform duration-300" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-6">Send Us a <span class="text-gradient">Message</span></h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" placeholder="How can we help you?" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all" placeholder="Tell us about your project or inquiry..." required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" id="submit-button" class="btn-primary w-full relative overflow-hidden group">
+                                <span class="relative z-10">Send Message</span>
+                                <span class="absolute top-0 left-0 w-0 h-full bg-indigo-700 transition-all duration-300 group-hover:w-full"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div data-aos="fade-left">
+                    <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-lg shadow-xl p-8 text-white mb-8">
+                        <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 rounded-full p-3 mr-4">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-1">Our Office</h3>
+                                    <p class="text-gray-100">123 Marketing St, Digital City, DC 45678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 rounded-full p-3 mr-4">
+                                    <i class="fas fa-phone-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-1">Phone</h3>
+                                    <p class="text-gray-100">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 rounded-full p-3 mr-4">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-1">Email</h3>
+                                    <p class="text-gray-100">info@hexagrow.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-white bg-opacity-20 rounded-full p-3 mr-4">
+                                    <i class="fas fa-clock text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-1">Working Hours</h3>
+                                    <p class="text-gray-100">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-100">Saturday: 10:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-xl p-8">
+                        <h2 class="text-2xl font-bold mb-4">Connect With Us</h2>
+                        <p class="text-gray-600 mb-6">Follow us on social media to stay updated with our latest projects and insights.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Find <span class="text-gradient">Us</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Visit our office or get in touch with us today.</p>
+            </div>
+            
+            <div class="rounded-lg overflow-hidden shadow-xl" data-aos="zoom-in">
+                <!-- Google Maps Embed -->
+                <div class="w-full h-96">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596552044!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1619826381244!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our services and process.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-question">
+                            <span>What services does Hexa Grow offer?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Hexa Grow offers a comprehensive range of digital marketing services including Lead Generation, Meta Ads Management, Funnel Optimization, Brand Awareness, Social Media Management, and Email Automation. We tailor our services to meet the specific needs and goals of each client.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <button class="faq-question">
+                            <span>How long does it take to see results from digital marketing?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The timeline for seeing results varies depending on the specific services and your business goals. Some strategies like PPC advertising can show immediate results, while others like SEO and content marketing are more long-term investments that build over time. During our initial consultation, we'll provide a realistic timeline based on your specific situation.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <button class="faq-question">
+                            <span>How much does it cost to work with Hexa Grow?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our pricing is customized based on your specific needs, goals, and the scope of services required. We offer different packages to accommodate various budgets and objectives. Contact us for a free consultation to discuss your project and receive a tailored quote.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                        <button class="faq-question">
+                            <span>Do you work with businesses in specific industries?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We work with businesses across various industries, including eCommerce, SaaS, real estate, healthcare, finance, and more. Our team has experience developing effective marketing strategies for diverse sectors, allowing us to bring valuable insights and best practices to your specific industry.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                        <button class="faq-question">
+                            <span>How do you measure the success of your marketing campaigns?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We establish clear KPIs (Key Performance Indicators) at the beginning of each campaign based on your business objectives. These might include metrics like conversion rates, lead generation, website traffic, engagement rates, and ROI. We provide regular reports and analytics dashboards to track progress and make data-driven adjustments to optimize performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message Modal -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full m-4 p-8 transform transition-all duration-300 scale-0" id="success-modal-content">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="text-center">
+                <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
+                    <svg class="h-10 w-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Message Sent Successfully!</h3>
+                <p class="text-gray-600 mb-6">Thank you for contacting us. We'll get back to you as soon as possible.</p>
+                <button id="success-button" class="btn-primary w-full">Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Hexa<span class="text-purple-400">Grow</span></h3>
+                    <p class="text-gray-400 mb-4">Helping businesses scale smarter through innovative digital marketing solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Lead Generation</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Meta Ads Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Funnel Optimization</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Brand Awareness</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Social Media Management</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Email Automation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-span-1">
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">123 Marketing St, Digital City, DC 45678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-purple-400"></i>
+                            <span class="text-gray-400">info@hexagrow.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Hexa Grow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-purple-600 text-white rounded-full p-3 shadow-lg opacity-0 invisible transition-all duration-300 z-50">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script>
+        // Contact Form Submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            const successModal = document.getElementById('success-modal');
+            const successModalContent = document.getElementById('success-modal-content');
+            const closeModal = document.getElementById('close-modal');
+            const successButton = document.getElementById('success-button');
+            
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate form submission with loading state
+                const submitButton = document.getElementById('submit-button');
+                const originalText = submitButton.innerHTML;
+                submitButton.innerHTML = '<span class="flex items-center justify-center"><svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Sending...</span>';
+                submitButton.disabled = true;
+                
+                // Simulate API call delay
+                setTimeout(function() {
+                    // Reset form
+                    contactForm.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    
+                    // Show success modal with animation
+                    successModal.classList.remove('hidden');
+                    setTimeout(function() {
+                        successModalContent.classList.remove('scale-0');
+                        successModalContent.classList.add('scale-100');
+                    }, 100);
+                }, 1500);
+            });
+            
+            // Close modal functions
+            function closeSuccessModal() {
+                successModalContent.classList.remove('scale-100');
+                successModalContent.classList.add('scale-0');
+                setTimeout(function() {
+                    successModal.classList.add('hidden');
+                }, 300);
+            }
+            
+            closeModal.addEventListener('click', closeSuccessModal);
+            successButton.addEventListener('click', closeSuccessModal);
+            successModal.addEventListener('click', function(e) {
+                if (e.target === successModal) {
+                    closeSuccessModal();
+                }
+            });
+            
+            // FAQ Accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.parentElement;
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // Toggle current item
+                    faqItem.classList.toggle('active');
+                    
+                    // Toggle icon rotation
+                    if (faqItem.classList.contains('active')) {
+                        icon.classList.add('rotate-180');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        icon.classList.remove('rotate-180');
+                        answer.style.maxHeight = '0px';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
